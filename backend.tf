@@ -6,7 +6,7 @@
 #     key            = "state/terraform.tf.state"
 #     region         = "us-east-1"
 #     encrypt        = true
-#     kms_key_id     = "alias/terraform-bucket-key"
+#     kms_key_id     = "alias/lambda-terraform-bucket-key"
 #     dynamodb_table = "terraform-state"
 #   }
 # }
