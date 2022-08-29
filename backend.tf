@@ -1,12 +1,12 @@
 # Uncomment after first deployment
 
-# terraform {
-#   backend "s3" {
-#     bucket         = "paypal-ccoe-tf123-lambda-tf-state-dev"
-#     key            = "state/terraform.tf.state"
-#     region         = "us-east-1"
-#     encrypt        = true
-#     kms_key_id     = "alias/lambda-terraform-bucket-key"
-#     dynamodb_table = "terraform-state"
-#   }
-# }
+terraform {
+  backend "s3" {
+    bucket         = "paypal-ccoe-tf123-lambda-tf-state-dev"
+    key            = "state/terraform.tf.state"
+    region         = "us-east-1"
+    encrypt        = true
+    kms_key_id     = "alias/tf-bucket-key"
+    dynamodb_table = "terraform-state"
+  }
+}
